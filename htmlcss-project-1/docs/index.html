@@ -8,10 +8,44 @@
     <link rel="stylesheet" href="../assets/css/styles.css" />
   </head>
   <body>
-    <h1>테스트 입니다.</h1>
+    <div class="container">
+      <!-- Fixed header area -->
+      <header class="header-area">
+        <div class="place-header" role="banner">
+          <h1 class="title">
+            <a href="#" class="link-back">
+              <img src="../assets//images/ico-back.svg" alt="go back" />
+            </a>
+            Storstad
+          </h1>
+          <a href="#" class="my-orders">ORDER</a>
+        </div>
+        <div class="place-tab scroll-x" role="tab-list">
+          <div class="tab-inner">
+            <a href="#" class="tab is-active" role="tab">
+              <span class="txt">HOME</span>
+            </a>
+            <a href="#" class="tab" role="tab">
+              <span class="txt">MENU</span>
+            </a>
+            <a href="#" class="tab" role="tab">
+              <span class="txt">REVIEW</span>
+            </a>
+            <a href="#" class="tab" role="tab">
+              <span class="txt">IMAGE</span>
+            </a>
+            <a href="#" class="tab" role="tab">
+              <span class="txt">MAP</span>
+            </a>
+          </div>
+        </div>
+      </header>
 
-    <div class="dimmed-layer"></div>
-    <div class="order-type-popup">
+      <!-- // Fixed header area -->
+    </div>
+
+    <div class="dimmed-layer" hidden></div>
+    <div class="order-type-popup" hidden>
       <p class="title">어디서 드시나요?</p>
       <div class="type-list">
         <a href="#" class="type-item">
