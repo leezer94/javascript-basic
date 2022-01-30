@@ -234,16 +234,18 @@ textarea::-webkit-outer-spin-button {
   border-left: 1px solid #f2f2f2;
 }
 
-.order-type-popup .icon {
-  width: 100px;
-}
-
 .order-type-popup .desc {
   margin-top: 8px;
   font-size: 15px;
   line-height: 1.5;
   font-weight: 600;
   color: #000;
+}
+
+.order-type-popup .icon {
+  width: 100px;
+  height: auto;
+  color: #03c75a;
 }
 
 .order-type-popup .btn-selection {

@@ -36,16 +36,17 @@
     }
   }
 
-  .icon {
-    width: 100px;
-  }
-
   .desc {
     margin-top: 8px;
     font-size: 15px;
     line-height: 1.5;
     font-weight: 600;
     color: $booking-color-text1;
+  }
+  .icon {
+    width: 100px;
+    height: auto;
+    color: $booking-color-bg118;
   }
 
   .btn-selection {
