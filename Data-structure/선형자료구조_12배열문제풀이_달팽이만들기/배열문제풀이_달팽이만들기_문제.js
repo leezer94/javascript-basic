@@ -4,11 +4,15 @@
 function answer(length) {
   let result = [];
 
-  // 코드 구현 시작 영역
+  for (let i = 0; i < length; i++) {
+    result.push([]);
 
-  // …
-
-  // 코드 구현 종료 영역
+    for (let arr of result) {
+      arr.push(i + 1);
+      if (arr[length - 1] === length) {
+      }
+    }
+  }
 
   return result;
 }

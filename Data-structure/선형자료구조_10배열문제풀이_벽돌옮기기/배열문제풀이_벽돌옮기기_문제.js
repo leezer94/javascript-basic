@@ -2,17 +2,18 @@
 
 /* user code */
 function answer(blocks) {
+  const average = blocks.reduce((a, b) => a + b) / blocks.length;
+
   let result = 0;
 
-  // 코드 구현 시작 영역
-
-  // …
-
-  // 코드 구현 종료 영역
+  blocks.forEach((num) => {
+    if (num < average) {
+      result += average - num;
+    }
+  });
 
   return result;
 }
-
 /* main code */
 let input = [
   // TC: 1

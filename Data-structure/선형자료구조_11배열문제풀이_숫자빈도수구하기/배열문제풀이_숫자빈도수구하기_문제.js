@@ -2,13 +2,22 @@
 
 /* user code */
 function answer(s, e) {
-  let result = [];
+  const result = Array(10).fill(0);
+  const arr = [];
 
-  // 코드 구현 시작 영역
+  for (let i = s; i <= e; i++) {
+    arr.push(i);
+  }
 
-  // …
+  for (let num of arr) {
+    num = String(num)
+      .split('')
+      .map((el) => Number(el));
 
-  // 코드 구현 종료 영역
+    for (let index of num) {
+      result[index]++;
+    }
+  }
 
   return result;
 }
