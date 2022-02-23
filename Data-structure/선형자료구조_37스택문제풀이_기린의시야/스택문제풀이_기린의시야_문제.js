@@ -1,14 +1,32 @@
 /* 기린의 시야 */
+if (!Array.prototype.peek) {
+  Array.prototype.peek = function () {
+    return this[this.length - 1];
+  };
+}
+
+if (!Array.prototype.isEmpty) {
+  Array.prototype.isEmpty = function () {
+    return this.length == 0;
+  };
+}
 
 /* user code */
 function answer(giraffe) {
   let result = 0;
+  let stack = [];
 
-  // 코드 구현 시작 영역
+  giraffe.push(Number.MAX_SAFE_INTEGER);
 
-  // …
+  let index = 0;
 
-  // 코드 구현 종료 영역
+  for (let i = 0; i < giraffe.length; i++) {
+    while (!stack.isEmpty() && stack.peek()['h'] < giraffe[i]) {
+      result += i - stack.pop()['index'] - 1;
+    }
+
+    stack.push({ h: giraffe[i], index: i });
+  }
 
   return result;
 }

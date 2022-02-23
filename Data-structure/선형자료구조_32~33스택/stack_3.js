@@ -57,3 +57,7 @@ console.log(stack.indexOf(1));
 console.log(stack.indexOf(1, 2));
 console.log(stack.includes(1));
 console.log(stack.includes(5));
+
+let arr = [1, 2, 3];
+
+arr.indexOf();
